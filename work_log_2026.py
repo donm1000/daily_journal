@@ -4,7 +4,7 @@ from reportlab.lib.pagesizes import LETTER
 from reportlab.lib.units import inch
 
 # Function to create a daily work log
-def create_daily_work_log(filename="daily_work_log_2025.pdf"):
+def create_daily_work_log(filename="daily_work_log_2026.pdf"):
     c = canvas.Canvas(filename, pagesize=LETTER)
     width, height = LETTER
 
@@ -14,7 +14,7 @@ def create_daily_work_log(filename="daily_work_log_2025.pdf"):
     total_days = 365  # 2025 is not a leap year
 
     for day in range(1, total_days + 1):
-        dt = datetime.date(2025, 1, 1) + datetime.timedelta(days=day - 1)
+        dt = datetime.date(2026, 1, 1) + datetime.timedelta(days=day - 1)
         day_of_week = dt.strftime("%A")
         date_str = dt.strftime("%B %d, %Y")
 
